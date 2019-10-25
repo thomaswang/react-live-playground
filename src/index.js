@@ -8,12 +8,13 @@ import styles from './styles.css'
 const ReactLivePlayground = ({
   code = '',
   theme = nightOwl,
+  scope,
   editorClass,
   errorClass,
   previewClass
 }) => (
   <section>
-    <LiveProvider code={code} theme={theme}>
+    <LiveProvider code={code} theme={theme} scope={scope}>
       <LiveEditor
         padding={36}
         className={editorClass || styles.playgroundCode}
@@ -27,6 +28,7 @@ const ReactLivePlayground = ({
 ReactLivePlayground.propTypes = {
   code: PropTypes.string,
   theme: PropTypes.object,
+  scope: PropTypes.object,
   editorClass: PropTypes.string,
   errorClass: PropTypes.string,
   previewClass: PropTypes.string

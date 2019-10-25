@@ -3,6 +3,11 @@
 
 /* ~ You can declare types that are available via importing the module */
 export interface Props {
-  code: object
-  theme: string
+  code: string
+  theme: object
+  scope: object
+  scope: object
+  editorClass: string
+  errorClass: string
+  previewClass: string
 }
