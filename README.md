@@ -37,11 +37,11 @@ const Example = () => (
 
 See `react-live` for the kind of React code you can use here. Pure JSX works because `react-live` pre-renders.
 
-#### theme: Object,
+#### theme: Object
 
-A prism-react-renderer theme object. See more in the [README for prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer#theming).
+A `prism-react-renderer` theme object. See more in the [README for prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer#theming).
 
-#### scope: Object,
+#### scope: Object
 
 To use global packages other than React (included by default), you have to scope them into `react-live`. More info in the [react-live README](https://github.com/FormidableLabs/react-live#how-does-the-scope-work).
 
@@ -49,7 +49,7 @@ To use global packages other than React (included by default), you have to scope
 
 `noInline`, `transformCode`, `language`, `disabled` -> These can be found in the [`<LiveProvider />` README section](https://github.com/FormidableLabs/react-live#liveprovider-)
 
-#### editorClass: String,
+#### editorClass: String
 
 CSS class name you can apply to style the [Live Editor](https://github.com/FormidableLabs/react-live#liveeditor-)
 
