@@ -17,8 +17,16 @@ const ReactLivePlayground = ({
   errorClass,
   previewClass
 }) => (
-  <section>
-    <LiveProvider code={code} theme={theme} scope={scope} noInline={noInline} transformCode={transformCode} language={language} disabled={disabled}>
+  <section style={{ marginBottom: '1.75rem' }}>
+    <LiveProvider
+      code={code}
+      theme={theme}
+      scope={scope}
+      noInline={noInline}
+      transformCode={transformCode}
+      language={language}
+      disabled={disabled}
+    >
       <LiveEditor
         padding={36}
         className={editorClass || styles.playgroundCode}
