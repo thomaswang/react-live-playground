@@ -45,6 +45,10 @@ A prism-react-renderer theme object. See more in the [README for prism-react-ren
 
 To use global packages other than React (included by default), you have to scope them into `react-live`. More info in the [react-live README](https://github.com/FormidableLabs/react-live#how-does-the-scope-work).
 
+### Other LiveProvider Props
+
+`noInline`, `transformCode`, `language`, `disabled` -> These can be found in the [`<LiveProvider />` README section](https://github.com/FormidableLabs/react-live#liveprovider-)
+
 #### editorClass: String,
 
 CSS class name you can apply to style the [Live Editor](https://github.com/FormidableLabs/react-live#liveeditor-)

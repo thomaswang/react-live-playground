@@ -6,6 +6,10 @@ export interface Props {
   code: string
   theme: object
   scope: object
+  noInline: boolean
+  transformCode: any
+  language: string
+  disabled: boolean
   editorClass: string
   errorClass: string
   previewClass: string

@@ -9,12 +9,16 @@ const ReactLivePlayground = ({
   code = '',
   theme = nightOwl,
   scope,
+  noInline,
+  transformCode,
+  language,
+  disabled,
   editorClass,
   errorClass,
   previewClass
 }) => (
   <section>
-    <LiveProvider code={code} theme={theme} scope={scope}>
+    <LiveProvider code={code} theme={theme} scope={scope} noInline={noInline} transformCode={transformCode} language={language} disabled={disabled}>
       <LiveEditor
         padding={36}
         className={editorClass || styles.playgroundCode}
@@ -29,6 +33,10 @@ ReactLivePlayground.propTypes = {
   code: PropTypes.string,
   theme: PropTypes.object,
   scope: PropTypes.object,
+  noInline: PropTypes.bool,
+  transformCode: PropTypes.func,
+  language: PropTypes.string,
+  disabled: PropTypes.bool,
   editorClass: PropTypes.string,
   errorClass: PropTypes.string,
   previewClass: PropTypes.string
