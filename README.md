@@ -27,22 +27,22 @@ const Example = () => (
 
 ## Props
 
-1. code: String
+#### code: String
 
 See `react-live` for the kind of React code you can use here. Pure JSX works, as `react-live` pre-renders.
 
-2. theme: Object,
+#### theme: Object,
 
 A prism-react-renderer theme object. See more in the [README for prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer#theming).
 
-3. editorClass: String,
+#### editorClass: String,
 
 CSS class name you can apply to style the [Live Editor](https://github.com/FormidableLabs/react-live#liveeditor-)
 
-4. errorClass: String
+#### errorClass: String
 
 CSS class name you can apply to style the [Live Error](https://github.com/FormidableLabs/react-live#liveerror-)
 
-5. previewClass: String
+#### previewClass: String
 
 CSS class name you can apply to style the [Live Preview](https://github.com/FormidableLabs/react-live#livepreview-)
