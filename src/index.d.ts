@@ -6,7 +6,6 @@ export interface Props {
   code: string
   theme: object
   scope: object
-  scope: object
   editorClass: string
   errorClass: string
   previewClass: string
