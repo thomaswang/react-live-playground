@@ -2,7 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-live-playground.svg)](https://www.npmjs.com/package/react-live-playground)
 
-> Playground wrapper around react-live
+**Playground wrapper around React Live!**
 
 ## Install
 
@@ -35,7 +35,7 @@ const Example = () => (
 
 #### code: String
 
-See `react-live` for the kind of React code you can use here. Pure JSX works because `react-live` pre-renders.
+See [React Live](https://github.com/FormidableLabs/react-live) for the kind of React code you can use here. Pure JSX works because `react-live` pre-renders.
 
 #### theme: Object
 
