@@ -20,6 +20,7 @@
   position: relative;
   font-family: monospace;
   padding: 42px 36px;
+  border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
   margin: 0;
