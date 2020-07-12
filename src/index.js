@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
-import nightOwl from 'prism-react-renderer/themes/nightOwl'
+import React from "react";
+import PropTypes from "prop-types";
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import nightOwl from "prism-react-renderer/themes/nightOwl";
 
-import styles from './styles.css'
+import styles from "./styles.css";
 
 const ReactLivePlayground = ({
-  code = '',
+  code = "",
   theme = nightOwl,
   scope,
   noInline,
@@ -15,9 +15,10 @@ const ReactLivePlayground = ({
   disabled,
   editorClass,
   errorClass,
-  previewClass
+  previewClass,
 }) => (
-  <section style={{ marginBottom: '1.75rem' }}>
+  <section style={{ marginBottom: "1.75rem" }}>
+    <LivePreview className={previewClass || styles.previewArea} />
     <LiveProvider
       code={code}
       theme={theme}
@@ -28,14 +29,13 @@ const ReactLivePlayground = ({
       disabled={disabled}
     >
       <LiveEditor
-        padding={36}
+        padding={42}
         className={editorClass || styles.playgroundCode}
       />
       <LiveError className={errorClass || styles.playgroundError} />
-      <LivePreview className={previewClass || styles.previewArea} />
     </LiveProvider>
   </section>
-)
+);
 
 ReactLivePlayground.propTypes = {
   code: PropTypes.string,
@@ -47,7 +47,7 @@ ReactLivePlayground.propTypes = {
   disabled: PropTypes.bool,
   editorClass: PropTypes.string,
   errorClass: PropTypes.string,
-  previewClass: PropTypes.string
-}
+  previewClass: PropTypes.string,
+};
 
-export default ReactLivePlayground
+export default ReactLivePlayground;
