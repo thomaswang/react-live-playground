@@ -27,11 +27,11 @@ const ReactLivePlayground = ({
       disabled={disabled}
     >
       <LivePreview className={previewClass || styles.previewArea} />
+      <LiveError className={errorClass || styles.playgroundError} />
       <LiveEditor
         padding={42}
         className={editorClass || styles.playgroundCode}
       />
-      <LiveError className={errorClass || styles.playgroundError} />
     </LiveProvider>
   </section>
 );
